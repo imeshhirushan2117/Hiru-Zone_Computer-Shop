@@ -1,24 +1,160 @@
-#video{
+/* logInForm */
+
+#video {
     top: 28px;
     left: 51px;
     width: 322px;
     height: 320px;
 }
 
-
-
-#inputUser{
+#inputUser {
     top: 89px;
     height: 50px;
 }
 
 
-#inputPassword{
+#inputPassword {
     top: 118px;
     height: 50px;
 }
 
-#btnLogin{
+#btnLogin {
     top: 150px;
     height: 50px;
+}
+
+
+
+
+/*adminDashBoard*/
+
+#header {
+
+    background-color: #212122;
+}
+
+#TopDivImg {
+    height: 30px;
+    position: relative;
+}
+
+#TopImg {
+    position: fixed;
+    bottom: 374px;
+    left: -66px;
+    max-width: 50%;
+    max-height: 61%;
+    padding: 72px;
+    cursor: grab;
+}
+
+.g {
+    position: absolute;
+    background-color: #1F262D;
+    padding: 10px;
+    margin: 2px;
+    width: 145px;
+    height: 490px;
+    top: 60px;
+}
+
+.dashBoardDiv img {
+    position: relative;
+    left: 5px;
+    bottom: -13px;
+}
+
+.dashBoardDiv a {
+    position: relative;
+    left: 8px;
+    top: 16px;
+    text-decoration: none;
+    color: #95A5A6;
+}
+
+.dashBoardDiv hr {
+
+
+    position: absolute;
+    color: #95A5A6;
+    height: 2px;
+    width: 135px;
+    top: 49px;
+}
+
+
+.itemDiv img {
+    position: relative;
+    left: 5px;
+    bottom: -13px;
+}
+
+.itemDiv a {
+    position: relative;
+    left: 8px;
+    top: 16px;
+    text-decoration: none;
+    color: #95A5A6;
+}
+
+.itemDiv hr {
+    color: #95A5A6;
+
+    position: relative;
+    height: 2px;
+    width: 135px;
+    top: 15px;
+}
+
+.customerDiv img {
+    position: relative;
+    left: 5px;
+    bottom: -13px;
+}
+
+.customerDiv a {
+    position: relative;
+    left: 8px;
+    top: 16px;
+    text-decoration: none;
+    color: #95A5A6;
+}
+
+.customerDiv hr {
+
+    position: relative;
+    color: #95A5A6;
+    height: 2px;
+    width: 135px;
+    top: 15px;
+}
+
+.orderDiv img{
+    position: relative;
+    left: 5px;
+    bottom: -13px;
+}
+
+.orderDiv a{
+    position: relative;
+    left: 8px;
+    top: 16px;
+    text-decoration: none;
+    color: #95A5A6;
+    
+   
+}
+
+.orderDiv hr{
+    position: relative;
+    color: #95A5A6;
+    height: 2px;
+    width: 135px;
+    top: 15px;
+}
+
+.dashBoardDiv a:hover ,  .itemDiv a:hover, .customerDiv a:hover , .orderDiv a:hover {
+    color: aqua;
+    transition: .5s ease;
+    
 }
