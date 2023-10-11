@@ -53,108 +53,74 @@
     background-color: #1F262D;
     padding: 10px;
     margin: 2px;
-    width: 145px;
+    width: 138px;
     height: 490px;
     top: 60px;
 }
 
-.dashBoardDiv img {
-    position: relative;
-    left: 5px;
-    bottom: -13px;
+.btnAdminDashboard{
+    width: 122px;
+    left: 9px;
+    top: 20px;
 }
 
-.dashBoardDiv a {
-    position: relative;
-    left: 8px;
-    top: 16px;
-    text-decoration: none;
-    color: #95A5A6;
+.btnAdminDashboard button{
+    width: 125px;
+    padding: 15px;
 }
 
-.dashBoardDiv hr {
-
-
-    position: absolute;
-    color: #95A5A6;
-    height: 2px;
-    width: 135px;
-    top: 49px;
-}
-
-
-.itemDiv img {
-    position: relative;
-    left: 5px;
-    bottom: -13px;
-}
-
-.itemDiv a {
-    position: relative;
-    left: 8px;
-    top: 16px;
-    text-decoration: none;
-    color: #95A5A6;
-}
-
-.itemDiv hr {
-    color: #95A5A6;
-
-    position: relative;
-    height: 2px;
-    width: 135px;
-    top: 15px;
-}
-
-.customerDiv img {
-    position: relative;
-    left: 5px;
-    bottom: -13px;
-}
-
-.customerDiv a {
-    position: relative;
-    left: 8px;
-    top: 16px;
-    text-decoration: none;
-    color: #95A5A6;
-}
-
-.customerDiv hr {
-
-    position: relative;
-    color: #95A5A6;
-    height: 2px;
-    width: 135px;
-    top: 15px;
-}
-
-.orderDiv img{
-    position: relative;
-    left: 5px;
-    bottom: -13px;
-}
-
-.orderDiv a{
-    position: relative;
-    left: 8px;
-    top: 16px;
-    text-decoration: none;
-    color: #95A5A6;
-    
-   
-}
-
-.orderDiv hr{
-    position: relative;
-    color: #95A5A6;
-    height: 2px;
-    width: 135px;
-    top: 15px;
-}
-
-.dashBoardDiv a:hover ,  .itemDiv a:hover, .customerDiv a:hover , .orderDiv a:hover {
+.btnAdminDashboard :hover{
     color: aqua;
-    transition: .5s ease;
+}
+
+
+.btnAdminItem{
+    width: 122px;
+    left: 0px;
+    top: 120px;
+}
+
+.btnAdminItem button{
+    width: 125px;
+    padding: 30px;
+}
+
+.btnAdminItem :hover{
+    color: aqua;
     
+}
+
+.btnAdminCustomer{
+    width: 122px;
+    left: 0px;
+    top: 120px;
+}
+
+.btnAdminCustomer button{
+    width: 125px;
+    padding: 20px;
+}
+
+.btnAdminCustomer hr{
+    position: relative;
+    top: -1px;
+}
+
+.btnAdminCustomer :hover{
+    color: aqua;
+}
+
+.btnAdminOredr{
+    bottom:15px;
+}
+
+
+.btnAdminOredr button{
+    width: 125px;
+    padding: 20px;
+}
+
+
+.btnAdminOredr :hover{
+    color: aqua;
 }
