@@ -106,6 +106,7 @@
     position: absolute;
     left: 128px;
     top: 62px;
+    display: block;
 }
 
 /*======================================== customerform ======================================== */
@@ -116,6 +117,7 @@
     position: absolute;
     left: 128px;
     top: 62px;
+    display: none;
 }
 
 
@@ -172,6 +174,7 @@
     position: absolute;
     left: 128px;
     top: 62px;
+    display: none;
 }
 
 

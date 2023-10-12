@@ -30,9 +30,9 @@
       <div class=" col-2 g position-fixed">
 
         <div class="divItem position-absolute">
-          <button id="btnItemBoard" type="button"
+          <button id="btnItem" type="button"
             class="btn btn-secondary bi bi-laptop pe-auto position-relative Dash">
-            <a href="#" style="text-decoration: none; color: aliceblue;">Items</a>
+            <a href="#itemPage" style="text-decoration: none; color: aliceblue;">Items</a>
           </button>
           <hr class="mb-2 bg-secondary">
         </div>
@@ -40,14 +40,14 @@
 
         <div class="divCustomer position-relative">
           <button id="btnCustomer" type="button" class="btn btn-secondary bi bi-person-lines-fill pe-auto position-relative Dash">
-            <a href="#" style="text-decoration: none; color: aliceblue;">Customer</a>
+            <a href="#customerPage" style="text-decoration: none; color: aliceblue;">Customer</a>
           </button>
           <hr class="mb-2 bg-secondary">
         </div>
 
         <div class="divOrder position-relative">
           <button id="btnOrder" type="button" class="btn btn-secondary bi bi-cart4 pe-auto position-relative Dash">
-            <a href="#" style="text-decoration: none; color: aliceblue;">Order</a>
+            <a href="#orderPage" style="text-decoration: none; color: aliceblue;">Order</a>
           </button>
           <hr class="mb-2 bg-secondary">
         </div>
@@ -63,12 +63,12 @@
   </section>
 
    <!--============================= item Form Page =============================-->
-   <section class="itemSection">
+   <section id="itemPage" class="itemSection">
       <h1>Item Form</h1>
    </section>
 
   <!--============================= customer Form Page =============================-->
-  <section class="customerSection">
+  <section  id="customerPage"  class="customerSection">
 
 <div>
   <nav class="navbar navbar-light bg-light justify-content-between">
@@ -133,7 +133,7 @@
 
 <!--============================= order Form Page =============================-->
 
-<section class="oredrSection">
+<section  id="orderPage" class="oredrSection">
 
   <div>
     <nav class="navbar navbar-light bg-light justify-content-between">
@@ -204,6 +204,80 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
   crossorigin="anonymous"></script>
+
+
+
+
+  <script>
+
+    var item = document.getElementById('itemPage');
+    var customer = document.getElementById('customerPage');
+    var order = document.getElementById('orderPage');
+
+    document.getElementById("btnItem").addEventListener("click", function () {
+      if(item == 'block'){
+        item.style.display = 'block';
+      }else{
+        item.style.display = 'block';
+        customer.style.display = 'none';
+        order.style.display = 'none'
+      }
+    });
+
+
+    document.getElementById("btnCustomer").addEventListener("click", function () {
+      if(customer.style.display == 'none'){
+        customer.style.display = 'block'
+      }else{
+        customer.style.display = 'block'
+        order.style.display = 'none'
+      }
+    });
+
+
+    document.getElementById("btnOrder").addEventListener("click", function () {
+      if(order.style.display == 'none'){
+        order.style.display = 'block'
+      }else{
+        order.style.display = 'block'
+      }
+    });
+
+
+    
+
+//       if(item.style.display == 'none'){
+//         item.style.display = 'block'
+       
+        
+//       }else{
+//         item.style.display = 'block'
+//         customer.style.display = 'none'
+//         orderDetails.style.display = 'none'
+//       }
+//     })
+
+//     document.getElementById('btnCustomer').addEventListener('click',function(){
+//       if(customer.style.display == 'none'){
+//         customer.style.display = 'block'
+//       }else{
+//         customer.style.display = 'block'
+//         orderDetails.style.display = 'none'
+//       }
+//     })
+
+
+// document.getElementById('btnOrderDetails').addEventListener('click',function(){
+//   if(orderDetails.style.display == 'none'){
+//     orderDetails.style.display = 'block'
+//   }else{
+//     orderDetails.style.display = 'block'
+//   }
+// })
+  </script>
+
+
+
 </body>
 
 </html>
