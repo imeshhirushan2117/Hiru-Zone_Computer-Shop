@@ -26,8 +26,10 @@
 /*adminForm*/
 
 #header {
-
-    background-color: #212122;
+    background-color: rgb(33, 33, 34);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 #TopDivImg {
@@ -37,11 +39,9 @@
 
 #TopImg {
     position: fixed;
-    bottom: 374px;
-    left: -66px;
-    max-width: 50%;
-    max-height: 61%;
-    padding: 72px;
+    bottom: 495px;
+    height: 16%;
+    padding: 0px;
    
 }
 
@@ -121,8 +121,6 @@
 }
 
 
-/*  */
-
 
 .logOutDiv{
     bottom:450px;
@@ -145,7 +143,7 @@
     height: 490px;
     position: absolute;
     left: 130px;
-    top: 62px;
+    top: 15px;
     display: block;
 }
 

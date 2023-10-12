@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
   <!--============================= Admin Form Page =============================-->
   <section>
     <div class="row ">
@@ -70,9 +69,6 @@
     <div class="itemDiv4"></div>
     <div class="itemDiv5"></div>
     <div class="itemDiv6"></div>
-
-
-
    </section>
 
   <!--============================= customer Form Page =============================-->
@@ -236,6 +232,7 @@
     document.getElementById("btnCustomer").addEventListener("click", function () {
       if(customer.style.display == 'none'){
         customer.style.display = 'block'
+        item.style.display = 'none';
       }else{
         customer.style.display = 'block'
         order.style.display = 'none'
@@ -246,6 +243,7 @@
     document.getElementById("btnOrder").addEventListener("click", function () {
       if(order.style.display == 'none'){
         order.style.display = 'block'
+        item.style.display = 'none';
       }else{
         order.style.display = 'block'
       }
@@ -255,37 +253,6 @@
       alert("log out")
     });
 
-
-    
-
-//       if(item.style.display == 'none'){
-//         item.style.display = 'block'
-       
-        
-//       }else{
-//         item.style.display = 'block'
-//         customer.style.display = 'none'
-//         orderDetails.style.display = 'none'
-//       }
-//     })
-
-//     document.getElementById('btnCustomer').addEventListener('click',function(){
-//       if(customer.style.display == 'none'){
-//         customer.style.display = 'block'
-//       }else{
-//         customer.style.display = 'block'
-//         orderDetails.style.display = 'none'
-//       }
-//     })
-
-
-// document.getElementById('btnOrderDetails').addEventListener('click',function(){
-//   if(orderDetails.style.display == 'none'){
-//     orderDetails.style.display = 'block'
-//   }else{
-//     orderDetails.style.display = 'block'
-//   }
-// })
   </script>
 
 

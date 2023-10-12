@@ -77,9 +77,109 @@
 
   <!--============================= Dash Board Page =============================-->
   <section id="dashBordPage" class="sectionDashboard">
-    <div>
-    <h1>Dash Board</h1>
-    </div>
+<!--======================================================================================================-->
+                                          <!--  Use Dash Board -->
+<!--======================================================================================================-->
+   <body>
+    <main class="mt-5 pt-3">
+      <div class="container-fluid">
+        <div class="row">
+
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <div class="card bg-primary text-white h-100">
+              <div class="card-body py-5">Primary Card</div>
+              <div class="card-footer d-flex">
+                View Details
+                <span class="ms-auto">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card bg-warning text-dark h-100">
+              <div class="card-body py-5">Warning Card</div>
+              <div class="card-footer d-flex">
+                View Details
+                <span class="ms-auto">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card bg-success text-white h-100">
+              <div class="card-body py-5">Success Card</div>
+              <div class="card-footer d-flex">
+                View Details
+                <span class="ms-auto">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card bg-danger text-white h-100">
+              <div class="card-body py-5">Danger Card</div>
+              <div class="card-footer d-flex">
+                View Details
+                <span class="ms-auto">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-header">
+                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+                Area Chart Example
+              </div>
+              <div class="card-body">
+                <canvas class="chart" width="400" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-header">
+                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+                Area Chart Example
+              </div>
+              <div class="card-body">
+                <canvas class="chart" width="400" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="card">
+              <div class="card-header">
+                <span><i class="bi bi-table me-2"></i></span> Data Table
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+<!--======================================================================================================-->
+                                          <!--  Use Dash Board -->
+<!--======================================================================================================-->
+  
   </section>
 
 
@@ -185,7 +285,7 @@
             <td>Secand hand</td>
             <td>3 month</td>
             <td>
-              <!-- <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i>Deleted</button> -->
+           
               <button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>
             </td>
           </tr>
@@ -315,10 +415,10 @@
 
       if(item.style.display == 'none'){
         item.style.display = 'block'
-       
-        
+        dashBoard.style.display = 'none';
       }else{
         item.style.display = 'block'
+        
         customer.style.display = 'none'
         orderDetails.style.display = 'none'
       }
@@ -327,6 +427,7 @@
     document.getElementById('btnCustomer').addEventListener('click',function(){
       if(customer.style.display == 'none'){
         customer.style.display = 'block'
+        dashBoard.style.display = 'none';
       }else{
         customer.style.display = 'block'
         orderDetails.style.display = 'none'
@@ -337,10 +438,72 @@
 document.getElementById('btnOrderDetails').addEventListener('click',function(){
   if(orderDetails.style.display == 'none'){
     orderDetails.style.display = 'block'
+    dashBoard.style.display = 'none';
   }else{
     orderDetails.style.display = 'block'
   }
 })
+
+
+document.getElementById('btnlogOut').addEventListener('click',function(){
+alert('log out admin')
+})
+
+// <!--======================================================================================================-->
+//                                           <!--  Use Dash Board -->
+// <!--======================================================================================================-->
+const charts = document.querySelectorAll(".chart");
+
+charts.forEach(function (chart) {
+  var ctx = chart.getContext("2d");
+  var myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      datasets: [
+        {
+          label: "# of Votes",
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: [
+            "rgba(255, 99, 132, 0.2)",
+            "rgba(54, 162, 235, 0.2)",
+            "rgba(255, 206, 86, 0.2)",
+            "rgba(75, 192, 192, 0.2)",
+            "rgba(153, 102, 255, 0.2)",
+            "rgba(255, 159, 64, 0.2)",
+          ],
+          borderColor: [
+            "rgba(255, 99, 132, 1)",
+            "rgba(54, 162, 235, 1)",
+            "rgba(255, 206, 86, 1)",
+            "rgba(75, 192, 192, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(255, 159, 64, 1)",
+          ],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+        },
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".data-table").each(function (_, table) {
+    $(table).DataTable();
+  });
+});
+
+// <!--======================================================================================================-->
+//                                           <!--  Use Dash Board -->
+// <!--======================================================================================================-->
+
   </script>
 
 </body>
