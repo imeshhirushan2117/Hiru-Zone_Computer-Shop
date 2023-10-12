@@ -11,6 +11,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -22,6 +23,7 @@
           <div class="row">
             <div class="col w-100% " id="TopDivImg">
               <img src="assets/icons/Logo_Lion_PL.png" alt="" class="w-25" id="TopImg">
+              
             </div>
           </div>
         </header>
@@ -53,7 +55,7 @@
 
         <div class="divlogOut position-absolute">
           <button id="btnlogOut" type="button" class="btn btn-secondary bi bi-box-arrow-in-left position-relative Dash">
-            <a href="#" style="text-decoration: none; color: aliceblue;">Log Out</a>
+            <a href="#" style="text-decoration: none; color:aliceblue">Log Out</a>
           </button>
           <hr class="mb-2 bg-secondary">
         </div>
@@ -250,7 +252,7 @@
     });
 
     document.getElementById("btnlogOut").addEventListener("click", function () {
-      alert("log out")
+     window.location.href = '../adminForm/logInPage.html'
     });
 
   </script>
