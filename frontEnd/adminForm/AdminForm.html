@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!--============================= Admin Form Page =============================-->
+  <section>
+    <div class="row ">
+      <div class="col-12">
+        <header class="p-3 mb-2" id="header">
+          <div class="row">
+            <div class="col w-100% " id="TopDivImg">
+              <img src="assets/icons/Logo_Lion_PL.png" alt="" class="w-25" id="TopImg">
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class=" col-2 g position-fixed">
+
+
+
+        <div class="btnAdminDashboard position-absolute">
+          <button id="btnDashBoard" type="button"
+            class="btn btn-secondary bi bi-speedometer2 pe-auto position-relative Dash">
+            <a href="#dashBordPage" style="text-decoration: none; color: aliceblue;">DashBoard</a>
+          </button>
+          <hr class="mb-2 bg-secondary">
+        </div>
+
+
+        <div class="btnAdminItem position-relative">
+          <button id="btnItems" type="button" class="btn btn-secondary bi bi-laptop pe-auto position-relative Dash">
+            <a href="#itemPage" style="text-decoration: none; color: aliceblue;">Items</a>
+          </button>
+          <hr class="mb-2 bg-secondary">
+        </div>
+
+        <div class="btnAdminCustomer position-relative">
+          <button id="btnCustomer" type="button" class="btn btn-secondary bi bi-person-lines-fill pe-auto position-relative Dash">
+            <a href="#customerPage" style="text-decoration: none; color: aliceblue;">Customers</a>
+          </button>
+          <hr class="mb-2 bg-secondary">
+        </div>
+
+
+        <div class="btnAdminOredr position-absolute">
+          <button id="btnOrderDetails" type="button" class="btn btn-secondary bi bi-server pe-auto position-relative Dash">
+            <a href="#orderDetailsPage" style="text-decoration: none; color: aliceblue;">Oredr Details</a>
+          </button>
+          <hr class="mb-2 bg-secondary">
+        </div>
+      </div>
+  </section>
+
+
+  <!--============================= Dash Board Page =============================-->
+  <section id="dashBordPage" class="sectionDashboard">
+    <div>
+    <h1>Dash Board</h1>
+    </div>
+  </section>
+
+
+
+  <!--============================= Items Page =============================-->
+  <section id="itemPage">
+    <div class="itemDiv">
+      <input type="text" placeholder="Item Id">
+      <select name="item" class="itemCombo">
+        <option value="">Item</option>
+        <option value="LapTop">LapTop</option>
+        <option value="DeskTop">DeskTop</option>
+      </select>
+      <input type="text" placeholder="Brand Name">
+      <input type="text" placeholder="Type Of Item">
+      <input type="text" placeholder="Qty">
+      <input type="text" placeholder="Price">
+
+      <select name="ram" class="itemCombo downCombo">
+        <option value="">Ram</option>
+        <option value="4GB">4GB</option>
+        <option value="8GB">8GB</option>
+      </select>
+
+      <select name="hard" class="itemCombo downCombo">
+        <option value="">Hard</option>
+        <option value="256 SSD">256 SSD</option>
+        <option value="512 HDD">512 HDD</option>
+      </select>
+
+      <select name="processor" class="itemCombo downCombo">
+        <option value="">Processor</option>
+        <option value="i3">i3</option>
+        <option value="i4">i4</option>
+        <option value="i5">i5</option>
+        <option value="i6">i6</option>
+        <option value="i7">i7</option>
+        <option value="i8">i8</option>
+        <option value="i9">i9</option>
+      </select>
+
+      <select name="gen" class="itemCombo downCombo">
+        <option value="">Genaration</option>
+        <option value="4th gen">4th gen</option>
+        <option value="5th gen">5th gen</option>
+        <option value="6th gen">6th gen</option>
+        <option value="7th gen">7th gen</option>
+        <option value="8th gen">8th gen</option>
+        <option value="9th gen">9th gen</option>
+        <option value="10th gen">10th gen</option>
+      </select>
+
+      <select name="status" class="itemCombo downCombo">
+        <option value="">Status</option>
+        <option value="Secandhand">Secand hand</option>
+        <option value="Brndnew">Brnd new</option>
+      </select>
+
+
+      <select name="Warranty" class="itemCombo downCombo">
+        <option value="">Warranty</option>
+        <option value="3 month">3 month</option>
+        <option value="5 month">5 month</option>
+      </select>
+    </div>
+    <div class="itemBtn">
+      <button id="saveItem">Save</button>
+      <button id="updateItem">Update</button>
+    </div>
+
+
+    <div>
+      <table class="table table-bordered " style="position: relative; top: 90px; text-align: center;">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Item Id</th>
+            <th scope="col">Item</th>
+            <th scope="col">Braand Name</th>
+            <th scope="col">Item Type</th>
+            <th scope="col">Qty</th>
+            <th scope="col">price</th>
+            <th scope="col">Ram</th>
+            <th scope="col">Hard</th>
+            <th scope="col">Processor</th>
+            <th scope="col">Genaration</th>
+            <th scope="col">Status</th>
+            <th scope="col">Warranty</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">I-001</th>
+            <td>Laptop</td>
+            <td>Desktop</td>
+            <td>acer</td>
+            <td>noteBook</td>
+            <td>5</td>
+            <td>130,000</td>
+            <td>8 GB</td>
+            <td>512 SSD</td>
+            <td>i5 8th gen</td>
+            <td>Secand hand</td>
+            <td>3 month</td>
+            <td>
+              <!-- <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i>Deleted</button> -->
+              <button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!--============================= Customer Page =============================-->
+
+<section id="customerPage">
+  <nav class="navbar navbar-light bg-light justify-content-between " style="height: 68px;">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" style="position: absolute;    position: absolute;
+      width: 20%; left: 68%;top: 15px;">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="position: absolute;
+      top: 13px;
+      left: 90%;">Search</button>
+</form>
+  </nav>
+
+  <div>
+    <table class="table table-bordered " style="position: relative; top: 20px; text-align: center;">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Customer Id</th>
+          <th scope="col">F-Name</th>
+          <th scope="col">L-Name</th>
+          <th scope="col">Contact</th>
+          <th scope="col">Nic</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Address</th>
+   
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">C-001</th>
+          <td>Imesh</td>
+          <td>Hirushan</td>
+          <td>0779201232</td>
+          <td>200024502800</td>
+          <td>Male</td>
+          <td>Address</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!--============================= Oredr Page =============================-->
+
+
+
+<section id="orderDetailsPage">
+  <nav class="navbar navbar-light bg-light justify-content-between " style="height: 68px">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" style="position: absolute;    position: absolute;
+      width: 20%; left: 68%;top: 15px;">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="position: absolute;
+      top: 13px;
+      left: 90%;">Search</button>
+</form>
+  </nav>
+
+  <div>
+    <table class="table table-bordered " style="position: relative; top: 20px; text-align: center;">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Order Id</th>
+          <th scope="col">Customer Id</th>
+          <th scope="col">Item Id</th>
+          <th scope="col">Qty</th>
+          <th scope="col">Warranty</th>
+          <th scope="col">Nic</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+   
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">O-001</th>
+          <td>Imesh</td>
+          <td>I-001</td>
+          <td>1</td>
+          <td>3 month</td>
+          <td>200024502800</td>
+          <td>12/10/23</td>
+          <td>10:43 AM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    var dashBoard = document.getElementById('dashBordPage');
+    var item = document.getElementById('itemPage');
+    var customer = document.getElementById('customerPage');
+    var orderDetails = document.getElementById('orderDetailsPage');
+
+    document.getElementById("btnDashBoard").addEventListener("click", function () {
+
+      if(dashBoard == 'block'){
+        dashBoard.style.display = 'block';
+      }else{
+        dashBoard.style.display = 'block';
+        item.style.display = 'none';
+        customer.style.display = 'none';
+        orderDetails.style.display = 'none';
+      }
+    });
+
+
+    document.getElementById("btnItems").addEventListener('click', function () {
+    
+
+      if(item.style.display == 'none'){
+        item.style.display = 'block'
+       
+        
+      }else{
+        item.style.display = 'block'
+        customer.style.display = 'none'
+        orderDetails.style.display = 'none'
+      }
+    })
+
+    document.getElementById('btnCustomer').addEventListener('click',function(){
+      if(customer.style.display == 'none'){
+        customer.style.display = 'block'
+      }else{
+        customer.style.display = 'block'
+        orderDetails.style.display = 'none'
+      }
+    })
+
+
+document.getElementById('btnOrderDetails').addEventListener('click',function(){
+  if(orderDetails.style.display == 'none'){
+    orderDetails.style.display = 'block'
+  }else{
+    orderDetails.style.display = 'block'
+  }
+})
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+/* logInForm */
+
+#video {
+    top: 28px;
+    left: 51px;
+    width: 322px;
+    height: 320px;
+}
+
+#inputUser {
+    top: 89px;
+    height: 50px;
+}
+
+
+#inputPassword {
+    top: 118px;
+    height: 50px;
+}
+
+#btnLogin {
+    top: 150px;
+    height: 50px;
+}
+
+/*adminForm*/
+
+#header {
+
+    background-color: #212122;
+}
+
+#TopDivImg {
+    height: 30px;
+    position: relative;
+}
+
+#TopImg {
+    position: fixed;
+    bottom: 374px;
+    left: -66px;
+    max-width: 50%;
+    max-height: 61%;
+    padding: 72px;
+   
+}
+
+.g {
+    position: absolute;
+    background-color: #1F262D;
+    padding: 10px;
+    margin: 2px;
+    width: 138px;
+    height: 490px;
+    top: 60px;
+}
+
+.btnAdminDashboard{
+    width: 122px;
+    left: 9px;
+    top: 20px;
+}
+
+.btnAdminDashboard button{
+    width: 125px;
+    padding: 15px;
+}
+
+.btnAdminDashboard :hover{
+    color: aqua;
+}
+
+
+.btnAdminItem{
+    width: 122px;
+    left: 0px;
+    top: 120px;
+}
+
+.btnAdminItem button{
+    width: 125px;
+    padding: 30px;
+}
+
+.btnAdminItem :hover{
+    color: aqua;
+    
+}
+
+.btnAdminCustomer{
+    width: 122px;
+    left: 0px;
+    top: 120px;
+}
+
+.btnAdminCustomer button{
+    width: 125px;
+    padding: 20px;
+}
+
+.btnAdminCustomer hr{
+    position: relative;
+    top: -1px;
+}
+
+.btnAdminCustomer :hover{
+    color: aqua;
+}
+
+.btnAdminOredr{
+    bottom:15px;
+}
+
+.btnAdminOredr button{
+    width: 125px;
+    padding: 20px;
+}
+
+.btnAdminOredr :hover{
+    color: aqua;
+}
+
+/*============================= Dashboard Page ============================= */
+.sectionDashboard{
+    background-color: #EEEEEE;
+    width: 1100px;
+    height: 490px;
+    position: absolute;
+    left: 130px;
+    top: 62px;
+    display: block;
+}
+
+/*============================= Items Page ============================= */
+
+#itemPage{
+    background-color:#EEEEEE;
+    width: 1100px;
+    height: 490px;
+    position: absolute;
+    left: 130px;
+    top: 62px;
+    display: none;
+    
+}
+
+.itemDiv{
+    position: relative;
+    left: 27px;
+    top: 28px;
+    cursor: text;
+}
+
+.itemCombo{
+    width: 107px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.downCombo{
+    position: relative;
+    top: 16px;
+}
+
+.itemBtn{
+    position: relative;
+    left: 747px;
+    bottom: -14px;
+}
+
+#saveItem{
+    background-color: #056399;
+    width: 189px;
+    position: absolute;
+    left: -46px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+#updateItem{
+    background-color: #059862;
+    width: 189px;
+    position: absolute;
+    left: 158px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* ============================= Customer Page ============================= */
+
+#customerPage{
+    background-color:#EEEEEE;
+    width: 1100px;
+    height: 490px;
+    position: absolute;
+    left: 130px;
+    top: 62px;
+    display: none;
+
+    
+}
+
+
+/* ============================= Oredr Page ============================= */
+
+#orderDetailsPage{
+    background-color:#EEEEEE;
+    width: 1100px;
+    height: 490px;
+    position: absolute;
+    left: 130px;
+    top: 62px;
+    display: none;
+    
+}
