@@ -52,8 +52,8 @@
           <hr class="mb-2 bg-secondary">
         </div>
 
-        <div class="divOrderDetails position-absolute">
-          <button id="btnOrderDetails" type="button" class="btn btn-secondary bi bi-box-arrow-in-left position-relative Dash">
+        <div class="divlogOut position-absolute">
+          <button id="btnlogOut" type="button" class="btn btn-secondary bi bi-box-arrow-in-left position-relative Dash">
             <a href="#" style="text-decoration: none; color: aliceblue;">Log Out</a>
           </button>
           <hr class="mb-2 bg-secondary">
@@ -64,7 +64,15 @@
 
    <!--============================= item Form Page =============================-->
    <section id="itemPage" class="itemSection">
-      <h1>Item Form</h1>
+    <div class="itemDiv1"></div>
+    <div class="itemDiv2"></div>
+    <div class="itemDiv3"></div>
+    <div class="itemDiv4"></div>
+    <div class="itemDiv5"></div>
+    <div class="itemDiv6"></div>
+
+
+
    </section>
 
   <!--============================= customer Form Page =============================-->
@@ -241,6 +249,10 @@
       }else{
         order.style.display = 'block'
       }
+    });
+
+    document.getElementById("btnlogOut").addEventListener("click", function () {
+      alert("log out")
     });
 
 

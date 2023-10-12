@@ -4,6 +4,9 @@
 #header {
 
     background-color: #212122;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 #TopDivImg {
@@ -13,11 +16,9 @@
 
 #TopImg {
     position: fixed;
-    bottom: 374px;
-    left: -66px;
-    max-width: 50%;
-    max-height: 61%;
-    padding: 72px;
+    bottom: 495px;
+    height: 16%;
+    padding: 0px;
    
 }
 
@@ -108,6 +109,69 @@
     top: 62px;
     display: block;
 }
+
+.itemDiv1{
+    position: relative;
+    background-color: #056399;
+    width: 300px;
+    height: 203px;
+    left: 24px;
+    bottom: -36px;
+}
+
+.itemDiv2{
+    position: relative;
+    background-color: #70ab09;
+    width: 300px;
+    height: 203px;
+    left: 24px;
+    bottom: -64px;
+}
+
+
+.itemDiv3{
+    position: relative;
+    background-color: #ab0909;
+    width: 300px;
+    height: 203px;
+    left: 401px;
+    bottom: 370px;
+}
+
+
+
+.itemDiv4{
+    position: relative;
+    background-color: #1709ab;
+    width: 300px;
+    height: 203px;
+    left: 401px;
+    bottom: 341px;
+}
+
+
+
+.itemDiv5{
+    position: absolute;
+    background-color: #010105;
+    width: 300px;
+    height: 203px;
+    left: 760px;
+    bottom: 251px;
+}
+
+.itemDiv6{
+    position: absolute;
+    background-color: #b96161;
+    width: 300px;
+    height: 203px;
+    left: 760px;
+    bottom: 18px;
+}
+
+
+
+
 
 /*======================================== customerform ======================================== */
 .customerSection{
@@ -210,4 +274,19 @@
     padding: 10px;
     border-radius: 15px;
     border: none;
+}
+
+/*======================================== log out form ======================================== */
+
+.divlogOut{
+    bottom:15px;
+}
+
+.divlogOut button{
+    width: 125px;
+    padding: 20px;
+}
+
+.divlogOut :hover{
+    color: aqua;
 }
