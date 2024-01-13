@@ -1,5 +1,5 @@
 
-/*adminForm*/
+/*userForm*/
 
 #header {
 
@@ -16,8 +16,8 @@
 
 #TopImg {
     position: fixed;
-    bottom: 495px;
-    height: 16%;
+    bottom: 472px;
+    height: 23%;
     padding: 0px;
    
 }
